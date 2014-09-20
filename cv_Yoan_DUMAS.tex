@@ -1,0 +1,118 @@
+\PassOptionsToPackage{pdfpagelabels=false}{hyperref}%rm the Package hyperref Warning: Option 'pdfpagelabels' is turned off
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+
+\moderncvstyle{classic} % ['casual', 'classic', 'oldstyle', 'banking']
+\moderncvcolor{blue} % ['blue', 'orange', 'green', 'red', 'purple', 'grey', 'black']
+
+\usepackage[utf8]{inputenc} % set encodage
+\usepackage{scrextend} % for the indentation
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+% adjust the page margins
+\usepackage[scale=0.82]{geometry}
+
+%\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Yoan}{Dumas}
+\title{Ingénieur en informatique embarquée} % optional
+\address{5 place du marché aux choux}{67160 Wissembourg}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33 (0)6 07 82 48 66} % The optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{yo\_dumas@hotmail.fr} % optional
+%\homepage{www.johndoe.com} % optional
+\social[linkedin][fr.linkedin.com/pub/yoan-dumas/5a/192/b55/]{yoan-dumas} % optional
+%\social[twitter]{jdoe} % optional
+\social[github][github.com/EasyRiderr]{Yoan Dumas} % optional
+\extrainfo{Permis A et B} % optional
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote} % optional, remove / comment the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Expériences professionnelles}
+\cventry{
+2014\\10 mois
+\raisebox{-6mm}{\href{http://www.schiller.fr/}{\includegraphics[width=2cm]{schiller.png}}}
+        }{Développeur C embarqué}{\href{http://www.schiller.fr/}{SCHILLER France SAS}}{Wissembourg}{Service R\&D}{Développement \emph{C} applicatif pour \emph{ARM9} (i.MX28), domaine du diagnostic et de l'urgence médicale.
+\begin{addmargin}[1em]{1em}% 1em left, 1em right
+\begin{itemize}
+\item Développement \emph{C} en environnement \emph{linux embarqué} et versionné avec \emph{git}.
+\item Développement de scripts en \emph{bash} et \emph{shell}.
+\item Intervention à tous les niveaux du \emph{cycle en V}.
+\end{itemize}
+\end{addmargin}}
+
+\cventry{
+2013\\6 mois
+\raisebox{-13mm}{\href{http://www.conti-online.com/www/automotive_de_en/}{\includegraphics[height=1.5cm]{Continental.png}}}
+         }{Stagiaire simulation et modélisation auto}{\href{http://www.conti-online.com/www/automotive_de_en/}{Continental Automotive}}{Toulouse}{Service R\&D}{Mise en place du projet AGeSys, domaine de l'industrie automobile.
+\begin{addmargin}[1em]{1em}% 1em left, 1em right
+\begin{itemize}
+\item Installation d'un système de gestion de version \emph{SVN} au sein du service.
+\item Implémentation de la \emph{cosimulation FMI} avec \emph{AMESim}, \emph{SCADE Suite}, \emph{Simulink} et \emph{Xcos}.
+\item Modélisation \emph{SysML} afin de faciliter les échanges en \emph{entreprise étendue}.
+\end{itemize}
+\end{addmargin}}
+
+\cventry{
+2012\\5 mois
+\raisebox{-4mm}{\href{http://www.dufournier-technologies.com/}{\includegraphics[width=2cm]{DUFOURNIER_Technologies.jpg}}}
+         }{Stagiaire développement C embarqué}{\href{http://www.dufournier-technologies.com/}{DUFOURNIER Technologies}}{Riom}{Service R\&D}{Portage en C du système RMS sur \emph{ARM Cortex-M3}, domaine de la compétition automobile.
+\begin{addmargin}[1em]{1em}% 1em left, 1em right
+\begin{itemize}
+\item Développement \emph{C} du RMS avec l'environnement (mbed : \emph{linux embarqué}).
+\item Création d'un logiciel de modélisation pneu en \emph{Java}.
+\end{itemize}
+\end{addmargin}}
+
+\cventry{
+2010\\3 mois
+\raisebox{-2mm}{\href{http://lecanape.ca/}{\includegraphics[width=2cm]{lecanape.png}}}
+         }{Stagiaire développement Web}{\href{http://lecanape.ca/}{Le canapé}}{Rouyn-Noranda}{Canada}{Développement PHP, HTML et SQL de sites web des clients.}
+
+\section{Formation}
+\cventry{2010--2013}{Diplôme d’ingénieurs en informatique}{\href{http://www.isima.fr/}{ISIMA (Institut Supérieur
+d’Informatique de Modélisation et de leurs Applications})}{Clermond-Ferrand}{}{Filière
+informatique des systèmes embarqués.}  % arguments 3 to 6 can be left empty
+\cventry{2008--2010}{Diplôme Universitaire et Technologique en informatique}{\href{http://www.iut-rodez.fr/}{IUT de Rodez}}
+{Rodez}{}{}
+\cventry{2008}{Baccalauréat S}{Lycée Jean Jaurès}{Saint Affrique}{}{Option Sciences de l'Ingénieur}
+
+\section{Connaissances}
+\cvdoubleitem{Langages}{\emph{C}, C++, Qt, Java, Scala, Matlab, LabView, MatLab, VHDL, SystemC.}
+             {Langues}{
+						 \begin{itemize}
+						     \item Français natal.
+						     \item \emph{Anglais} courant (TOEIC 865).
+						 \end{itemize}
+						 }
+\cvdoubleitem{Logiciels}{vim, Eclipse, Geany, Qt Creator, git, gcc, g++, ddd, Simulink, AMESim, SCADE Suite, Android SDK}
+             {Modélisation}{
+\begin{itemize}
+\item Merise
+\item UML
+\item SysML
+\end{itemize}}
+
+\cvitem{Projets}{
+\begin{itemize}
+\item Envoyer les données GPS d'une moto en WiFi en \emph{temps réel} sur RASPBERRY PI en \emph{Java}.
+\item Contrôler un WifiBot avec des équipements de réalité virtuelle en \emph{C++} et \emph{Qt}.
+\item Développement d'un jeu de dame en \emph{C++} et \emph{Qt} avec une interface graphique
+\item Calculer les besoins énergétiques journaliers en \emph{Java} grâce à une interface graphique.
+\end{itemize}
+}
+	
+						
+\section{Centres d'intérêts}
+\cvitem{Sports}{Vélo (DH,  VTT), natation, course à pied, randonnée en montagne.}
+\cvitem{Autres}{Sports mécaniques, musique.}
+\end{document}
