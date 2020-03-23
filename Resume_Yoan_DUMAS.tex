@@ -1,0 +1,154 @@
+\PassOptionsToPackage{pdfpagelabels=false}{hyperref}%rm the Package hyperref Warning: Option 'pdfpagelabels' is turned off
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+
+\moderncvstyle{classic} % ['casual', 'classic', 'oldstyle', 'banking']
+\moderncvcolor{blue} % ['blue', 'orange', 'green', 'red', 'purple', 'grey', 'black']
+
+\usepackage[utf8]{inputenc} % set encodage
+\usepackage{scrextend} % for the indentation
+\usepackage{graphicx}
+
+% adjust the page margins
+\usepackage[scale=0.84]{geometry}
+
+%\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Yoan}{Dumas}
+\title{Embedded systems engineer} % optional
+\address{5 rue Fernand Léger}{31170 Tournefeuille}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33 607 824 866} % The optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{yo\_dumas@hotmail.fr} % optional
+%\homepage{www.johndoe.com} % optional
+\social[linkedin][fr.linkedin.com/pub/yoan-dumas/5a/192/b55/]{yoan-dumas} % optional
+%\social[twitter]{jdoe} % optional
+\social[github][github.com/EasyRiderr]{Yoan Dumas} % optional
+\extrainfo{Car and motorcycle driving licence} % optional
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote} % optional, remove / comment the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Professional experiences}
+\cventry{Current job\\since 2017
+\raisebox{-10.5mm}{\href{https://www.eye-lights.com/}{\includegraphics[width=1.2cm,height=1.2cm]{EyeLights.png}}}}
+	{Head of embedded systems}
+	{\href{https://www.eye-lights.com/}{EyeLights}}
+	{Labège}{}
+	{Development of Head Up Displays for car and motorcycle applications.
+\begin{addmargin}[1em]{1em}% 1em left, 1em right
+\begin{itemize}
+\item Development of \emph{C} drivers and applicative firmware in an embedded and \emph{soft real time} environment, versioned thanks to \emph{git}.
+\item Management of projects and freelancers thanks to agile method \emph{SCRUM} and continuous integration.
+\item Looking for partners, components providers.
+\end{itemize}
+\end{addmargin}
+}
+
+\cventry{2014\\3 years
+\raisebox{-11mm}{\href{http://www.intel.fr/}{\includegraphics[width=2cm,height=1.2cm]{intel.png}}}}
+	{Coworker, Embedded C developer}
+	{\href{http://www.ausy.fr/}{AUSY}}
+	{Toulouse}{for INTEL}
+	{Development of connected glasses dedicated to sportsmen with voice command and coach audio feedback.
+\begin{addmargin}[1em]{1em}% 1em left, 1em right
+\begin{itemize}
+\item Development of \emph{C} drivers in an embedded and \emph{soft real time} (FreeRTOS) environment, versioned thanks to \emph{git}, on several cores: Cortex-M4 (STM32F429), Cortex-M0 (NRF51422), x86 (Intel Quark) and ARC.
+\item Scripts developments in \emph{bash} and \emph{python}.
+\item Agile method \emph{SCRUM}, international working environment.
+\end{itemize}
+\end{addmargin}
+}
+
+\cventry{2014\\10 months
+\raisebox{-6mm}{\href{http://www.schiller.fr/}{\includegraphics[width=2cm]{schiller.png}}}
+        }{Embedded C developer}{\href{http://www.schiller.fr/}{SCHILLER France SAS}}{Wissembourg}{R\&D Department}{Development of \emph{C} applicative firmware for \emph{ARM9} (i.MX28), medical emergency and diagnostic domain.
+\begin{addmargin}[1em]{1em}% 1em left, 1em right
+\begin{itemize}
+\item \emph{C} development in \emph{embedded linux}, versioned thanks to \emph{git}.
+\item Scripts development in \emph{bash} and \emph{shell}.
+\item Intervention at all levels of \emph{V model}.
+\end{itemize}
+\end{addmargin}
+}
+
+\cventry{2013\\6 months
+\raisebox{-9mm}{\href{http://www.conti-online.com/www/automotive_de_en/}{\includegraphics[height=1.2cm]{logo_conti.png}}}
+         }{Trainee: simulation and car modelization}{\href{http://www.conti-online.com/www/automotive_de_en/}{Continental Automotive}}{Toulouse}{R\&D Department}{Setup of the AGeSys project, automotive industry domain.
+\begin{addmargin}[1em]{1em}% 1em left, 1em right
+\begin{itemize}
+\item Installation of a version management system: \emph{SVN} for the team.
+\item \emph{FMI cosimulation} with \emph{AMESim}, \emph{SCADE Suite}, \emph{Simulink} and \emph{Xcos}.
+\item \emph{SysML} modeling to ease exchanges between \emph{extended enterprises}.
+\end{itemize}
+\end{addmargin}
+}
+
+\cventry{2012\\5 months
+\raisebox{-4mm}{\href{http://www.dufournier-technologies.com/}{\includegraphics[width=2cm]{DUFOURNIER_Technologies.jpg}}}
+         }{Trainee: embedded C developer}{\href{http://www.dufournier-technologies.com/}{DUFOURNIER Technologies}}{Riom}{R\&D Department}{Migration of an existing RMS system in C to \emph{ARM Cortex-M3}, automotive competition domain.
+\begin{addmargin}[1em]{1em}% 1em left, 1em right
+\begin{itemize}
+\item Development in \emph{C} of the RMS with mbed environment: \emph{embedded linux}.
+\item Development of a 3D tire modeling software in \emph{Java}.
+\end{itemize}
+\end{addmargin}
+}
+
+
+
+\section{Education}
+\cventry{2015}
+	{Training on peripheral driver development for Linux kernel}
+	{\href{http://free-electrons.com/}{free electrons}}
+	{}{}{}
+	
+\cventry{2013}
+	{Functional Programming Principles in Scala}
+	{\href{https://fr.coursera.org/course/progfun}{coursera}}
+	{(MOOC)}{}{}
+
+\cventry{2010--2013}
+	{Embedded systems engineer diploma}
+	{\href{http://www.isima.fr/}{ISIMA (Institut Supérieur d’Informatique de Modélisation et de leurs Applications})}
+	{Clermond-Ferrand}{Embedded systems specialization}{}
+
+\cventry{2008--2010}
+	{Diplôme Universitaire et Technologique in computer science}
+	{\href{http://www.iut-rodez.fr/}{IUT de Rodez}}
+	{Rodez}{}{}
+
+\cventry{2008}
+	{Baccalauréat S}
+	{Lycée Jean Jaurès}
+	{Saint Affrique}{Option Sciences de l'Ingénieur}{}
+
+
+\section{Knowledges}
+\cvdoubleitem{Softwares}
+								{\emph{vim}, Eclipse, git, gcc, gdb.}
+							{Languages}
+								{\emph{C}, C++, Qt, Java, bash, python, Scala.}
+
+\cvitem{Languages}{French native, \emph{English} fluent (TOEIC 865).}
+
+\cvitem{Projects}{
+\begin{itemize}
+\item Send GPS data from a motorcycle through WiFi in \emph{soft real time} thanks to a RASPBERRY PI in \emph{Java}.
+\item Pilot a WifiBot equipped with virtual reality stuffs in \emph{C++} and \emph{Qt}.
+\end{itemize}
+}
+
+\section{Hobbies}
+\cvdoubleitem{Sports:}
+{Savate boxe française, bicycle, running.}
+{Others:}
+{Moto, mecanical sports, music.}
+\end{document}
